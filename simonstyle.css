@@ -1,0 +1,87 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('images/image1.jpg'); /* Image path set karein */
+    background-size: cover; /* Image ko poore background par cover karne ke liye */
+    background-position: center; /* Image ko center align karne ke liye */
+    overflow: hidden; /* Prevent scrolling */
+}
+h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #ff7c01, #e55f87, #6488f6, #51bcdc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorChange 5s infinite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes colorChange {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 8px solid black;
+    margin: 0.75rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.yellow {
+    background-color: #ff7c01;
+}
+
+.red {
+    background-color: #e55f87;
+}
+
+.green {
+    background-color: #6488f6;
+}
+
+.purple {
+    background-color: #51bcdc;
+}
+
+.flash {
+    background-color: white;
+}
+
+.userFlash {
+    background-color: green;
+}
+
+.brand-name {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorChange 5s infinite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.9;
+}
+
+.brand-name:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
